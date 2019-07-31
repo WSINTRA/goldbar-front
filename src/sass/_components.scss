@@ -1,0 +1,25 @@
+.searchBar {
+	margin-left: 25%;
+	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+	font-size: 2rem;
+	input {
+		text-align: center;
+		color: #CD4C5E;
+		padding: 2rem;
+		width: 50vw;
+		font-size: 3rem;
+		background-image: radial-gradient(rgba(#34D43E, 0.8), #44D2AA);
+
+	}
+}
+
+::placeholder {
+	color: #E038F2;
+	opacity: 0.2;
+	text-align: center;
+}
+
+.button {
+	
+}
