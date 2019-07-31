@@ -1,15 +1,26 @@
+@import 'variable';
+
 .searchBar {
 	margin-left: 25%;
 	margin-bottom: 1rem;
 	margin-top: 1.5rem;
 	font-size: 2rem;
+
 	input {
+		border-radius: 1200rem;
+		border-style: none;
 		text-align: center;
 		color: #CD4C5E;
 		padding: 2rem;
 		width: 50vw;
 		font-size: 3rem;
-		background-image: radial-gradient(rgba(#34D43E, 0.8), #44D2AA);
+		background-image: $gradient;
+		outline-style: none;
+		transition: all .2s;
+		&:hover {
+    transform: translateY(-0.1rem);
+    box-shadow: 0.02rem 0.5rem 1rem rgba(86, 93, 94, 0.4)
+}
 
 	}
 }
@@ -19,7 +30,38 @@
 	opacity: 0.2;
 	text-align: center;
 }
+.btn,
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 2.50rem;
+    transition: all .2s;
+}
 
-.button {
-	
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0.03rem 1rem 2rem rgba(86, 93, 94, 0.4)
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0.03rem 0.5rem 1rem rgba(86, 93, 94, 0.4)
+}
+
+.btn--white {
+    background-color: #BD40AE;
+    color: #91F79D;
+
+}
+.btn--black {
+    background-color: rgba(239, 237, 250, 1);
+    color: #233926;
+}
+
+.btn--animated {
+    animation: buttonUp 3s ease-out;
+
 }

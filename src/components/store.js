@@ -23,6 +23,9 @@ componentDidMount() {
 //initial data from the backend, only once the components have rendered.
 //Next Step is to build a Card component that will render multiple 'goldbars' on the page
 
+//now I have my cards rendered in a grid I want to implement a search bar.
+//This needs to filter the cards displayed.
+
 render () {
 
 const FilterCards = (filter) => {
@@ -36,7 +39,7 @@ const DisplayedCards = (searchTerm) =>{
 	const Cards = goldCardsCopy.filter(obj => obj.name.toLowerCase().includes( searchTerm.toLowerCase() ) )
     return Cards
 }
-	let { goldbars, filter } = this.state
+	let { filter } = this.state
 	return (
 	<div>
 	<SearchBar filter={filter} controlFunction={FilterCards}/>
@@ -49,6 +52,3 @@ const DisplayedCards = (searchTerm) =>{
 }
 
 export default Store;
-
-//now I have my cards rendered in a grid I want to implement a search bar.
-//This needs to filter the cards displayed.

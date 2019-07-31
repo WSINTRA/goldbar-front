@@ -1,6 +1,6 @@
 //Big fat search bar
 
-import React, { Component } from 'react';
+import React from 'react';
 
 function searchBar(props) {
 
@@ -10,6 +10,7 @@ function searchBar(props) {
 			<input type="text" placeholder="SEARCH BY NAME" 
 			value={filter} 
 			onChange={(e)=>controlFunction(e.target.value)}/>
+			
 				
 			</div>
 		);
