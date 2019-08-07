@@ -9,6 +9,7 @@ function goldBarCard (props) {
 	<h1> {bar.name} </h1>
     <p> {bar.details} </p>
     <h2> {bar.value}</h2>
+    <div className="btn btn--white">Add-to-Vault</div>
     <div className="btn btn--white">Show</div>
     <div className="btn btn--black">Hide</div>
     </div>
