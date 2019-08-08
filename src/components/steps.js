@@ -8,3 +8,5 @@
 
 //Next step, create a storage for cards I want to put in my vault.
 
+//then create a button to store cards
+//install redux 
