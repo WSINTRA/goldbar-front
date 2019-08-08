@@ -9,8 +9,8 @@ function reducer( state = initialState , action){
 
 	switch(action.type){
 		case "ADD_GOLDBARS":
-		return {...state, goldbars: [...state.goldbars, {bar: action.payload} ]}
-		break;
+		return {...state, goldbars: action.payload }
+		
 		default:
 		return state
 	}	

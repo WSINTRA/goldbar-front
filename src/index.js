@@ -13,9 +13,9 @@ import { Provider } from 'react-redux'
 let store = createStore(reducer)
 // console.log("Getting state", store.getState())
 
-store.dispatch({type:"ADD_GOLDBARS", payload: "something"}) //How we want to change state
+// store.dispatch({type:"ADD_GOLDBARS", payload: "something"}) //How we want to change state
 //Dispatch only takes actions
-console.log("Getting state", store.getState())
+
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
