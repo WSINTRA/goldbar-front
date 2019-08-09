@@ -3,7 +3,8 @@
 const initialState = {
 	goldbars: [],
 	filter: "",
-	vault: []
+	vault: [],
+	show: false,
 }
 
 const checkIfobjectExists = (obj, array) => {
@@ -33,6 +34,10 @@ function reducer( state = initialState , action){
 		else { return {...state, vault: [...state.vault, action.payload] }}
 	    case "REMOVE_FR_VAULT":
 	    return {...state, vault: removeFromVault(action.payload, state.vault)}
+	    case "SHOW_VAULT":
+	    return {...state, show: action.payload}
+	    case "HIDE_VAULT":
+	    return {...state, show: action.payload}
 		default:
 		return state
 	}	

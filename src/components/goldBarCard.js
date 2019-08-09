@@ -12,8 +12,6 @@ function goldBarCard (props) {
     <p> {bar.details} </p>
     <h2> {bar.value}</h2>
     <div className="btn btn--white" onClick={()=> props.addToVault(bar) }>Add-to-Vault</div>
-    <div className="btn btn--white">Show</div>
-    <div className="btn btn--black">Hide</div>
     </div>
 	</div>
 	)
