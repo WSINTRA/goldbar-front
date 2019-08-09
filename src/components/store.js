@@ -55,12 +55,14 @@ function mapStateToProps(state){
 //write a function to write to state
 function mapDispatchToProps(dispatch){
     return { 
+    	addToVault: (card)=>{
+    		dispatch({type:"ADD_TO_VAULT", payload: card})
+    	},
     	changeFilter: (filter)=>{
-    		console.log(filter)
     		dispatch({type:"CHANGE_FILTER", payload: filter})
     	},
     	addGoldBars: (goldbars)=>{
-      dispatch( {type:"ADD_GOLDBARS", payload: goldbars} )
+      		dispatch( {type:"ADD_GOLDBARS", payload: goldbars} )
     }}
 }
 
