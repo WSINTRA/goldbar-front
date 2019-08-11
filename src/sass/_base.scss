@@ -15,4 +15,11 @@
 html {
 	font-size: 62.5%;
 	background-color: #9CC2C0;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	&:visited{
+        		color: #FC0A47;
+        	}
 }

@@ -14,6 +14,7 @@
 		padding: 2rem;
 		width: 50vw;
 		font-size: 3rem;
+   
 		background-image: $gradient;
 		outline-style: none;
 		transition: all .2s;
@@ -37,7 +38,7 @@
     text-decoration: none;
     padding: 1rem 2rem;
     display: inline-block;
-    border-radius: 2.50rem;
+    border-radius: 0.50rem;
     transition: all .2s;
 }
 
@@ -80,5 +81,5 @@
 .vault-exit-active {
   opacity: 0;
   transform: scale(0.9);
-  transition: opacity 100ms, transform 250ms;
+  transition: opacity 500ms, transform 250ms;
 }
